@@ -1,0 +1,23 @@
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: rgb(62, 62, 68);
+    max-width: 67%; 
+    margin: 0 auto;
+    overflow: auto;
+    color: rgb(191, 191, 191);
+    overflow: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+.link {
+    padding-left: 45%;
+}
+
+.photo {
+    padding-left: 5%;
+    float:none;
+}
