@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-one: rgb(160, 197, 197);
+    --color-two: rgb(200, 104, 104);
+    --color-three: rgb(219, 157, 157);
+    --color-four: rgb(211, 123, 123);
+    --border-one: solid 2px rgb(240, 221, 221);
+    /*For the colour palette I opted for a monochromatic pink look with a pop of blue. I decided on choosing the colour pink because the layout of the grids really reminded me of intestines in the body. 
+    I chose a more muted pink rather than a colour like neon pink to make the work more soothing and less jarring to the eyes.
+    Since in Hedra's work the grid on the second row, second column is different from the rest of the grids, I decided to show this difference by adding the colour blue to complement the pink, adding a contrast to the work.*/
+}
+
+#bg-grid-container{
+    background-color: var(--color-four);
+    /*I chose a darker pink colour for the background fills because the colour of the borders of the grids are a pale pink, therefore by adding a darker pink, it will make the lines stand out.*/
+    width: 72vh;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    /*The grid-template-columns property specifies the number and widths of columns in a grid layout.
+    The grid-template-rows property specifies the number and lengths of rows in a grid layout.*/
+
+
+}
+
+.grid-item{
+    border: var(--border-one);
+    background-color: var(--color-three);
+
+}
+
+#item-one{
+    grid-column: 1;
+    grid-row: 1;
+    border-right-style: none;
+    border-bottom-style: none;
+    /*By adding the word "none" to border-right-style and border-bottom-style, it removes the right and bottom borders of the grid*/
+    /*The grid-column is a shorthand property that specifies a grid-item's size and location within a grid column.*/
+    /*The grid-row is a shorthand property that specifies a grid-item's size and location within a grid row.*/
+}
+
+#item-two{
+    grid-column: 1;
+    grid-row: 2;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+}
+
+#item-three{
+    grid-column: 1;
+    grid-row: 3;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+}
+
+#item-four{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 0% 0% 0% 50%;
+    /*the border-radius determines how much the border curves on each side.*/
+    border-right-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+    /*The linear gradients were used to add some depth to the work. The darker colour is placed at the bottom while the lighter colour at the top to give it a shadow effect.*/
+}
+
+#item-five{
+    grid-column: 1;
+    grid-row: 5;
+    border-radius: 50% 0% 0% 0%;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+#item-six{
+    grid-column: 1;
+    grid-row: 6;
+    border-bottom-style: none;
+    border-top-style: none;
+}
+
+#item-seven{
+    grid-column: 1;
+    grid-row: 7;
+    border-radius: 0% 0% 0% 50%;
+    border-right-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-eight{
+    grid-column: 2;
+    grid-row: 1;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+#item-nine{
+    grid-column: 2;
+    grid-row: 2;
+    border-style:dashed;
+    background-color: var(--color-one);
+    /*since on Hedra's work, the grid on column 2, row 2 was different from the rest, in terms of border style, I decided to choose a dashed border style instead of a border style with solid lines as I have done with the other grids. 
+    Another reason that contributed to me choosing the dashed border style was that since the grids next to this grid had no border, I did not want to add a border with solid lines as it would have made it look too harsh. 
+    I wanted to make the grid stand out but also still have a cohesive look, therefore I chose a dashed border style. */
+}
+
+#item-ten{
+    grid-column: 2;
+    grid-row: 3;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-eleven{
+    grid-column: 2;
+    grid-row: 4;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+    /*the direction of the linear-gradient can be changed by adding the words: "to top", "to bottom", "to left", "to right" etc. To be more specific, you can put in specific degress of rotation.*/
+}
+
+#item-twelve{
+    grid-column: 2;
+    grid-row: 5;
+    border-radius: 0% 50% 0% 0%;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirteen{
+    grid-column: 2;
+    grid-row: 6;
+    border-radius: 0% 0% 0% 50%;
+    border-right-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-fourteen{
+    grid-column: 2;
+    grid-row: 7;
+    border-right-style: none;
+    border-left-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-fifteen{
+    grid-column: 3;
+    grid-row: 1;
+    border-radius: 0% 50% 0% 0%;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+#item-sixteen{
+    grid-column: 3;
+    grid-row: 2;
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-seventeen{
+    grid-column: 3;
+    grid-row: 3;
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-eighteen{
+    grid-column: 3;
+    grid-row: 4;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-nineteen{
+    grid-column: 3;
+    grid-row: 5;
+    border-radius: 50% 0% 0% 0%;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+#item-twenty{
+    grid-column: 3;
+    grid-row: 6;
+    border-radius: 0% 0% 50% 0%;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-twentyone{
+    grid-column: 3;
+    grid-row: 7;
+    border-right-style: none;
+    border-left-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-twentytwo{
+    grid-column: 4;
+    grid-row: 1;
+    border-radius: 50% 0% 0% 0%;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+#item-twentythree{
+    grid-column: 4;
+    grid-row: 2;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-twentyfour{
+    grid-column: 4;
+    grid-row: 3;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-twentyfive{
+    grid-column: 4;
+    grid-row: 4;
+    border-radius: 0% 0% 50% 0%;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-twentysix{
+    grid-column: 4;
+    grid-row: 5;
+    border-right-style: none;
+    border-left-style: none;
+    background-image: linear-gradient(to top left, var(--color-two), var(--color-three) 70%);
+    /*the percentage determines the amount of the colour that shows up in the gradient*/
+}
+
+#item-twentyseven{
+    grid-column: 4;
+    grid-row: 6;
+    border-radius: 50% 0% 0% 0%;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+#item-twentyeight{
+    grid-column: 4;
+    grid-row: 7;
+    border-radius: 0% 0% 50% 0%;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-twentynine{
+    grid-column: 5;
+    grid-row: 1;
+    border-radius: 0% 50% 0% 0%;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirty{
+    grid-column: 5;
+    grid-row: 2;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirtyone{
+    grid-column: 5;
+    grid-row: 3;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirtytwo{
+    grid-column: 5;
+    grid-row: 4;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirtythree{
+    grid-column: 5;
+    grid-row: 5;
+    border-radius: 0% 0% 50% 0%;
+    border-left-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
+
+#item-thirtyfour{
+    grid-column: 5;
+    grid-row: 6;
+    border-radius: 0% 50% 0% 0%;
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+#item-thirtyfive{
+    grid-column: 5;
+    grid-row: 7;
+    border-radius: 0% 0% 0% 50%;
+    border-right-style: none;
+    border-top-style: none;
+    background-image: linear-gradient(to top, var(--color-two), var(--color-three));
+}
