@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  --col-05:#5ea892;
+  --col-06:#0d0d0d;
+  font-size: 16px;
+}
+
+#navmenu{
+  float: right;
+  /*float:right; positions the element to the right of its container.*/
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+nav li{
+  display: inline-block;
+  /*By setting the display of the list items in the navigation menu to inline-block, it positions the words to the right and left of each other rather than top and bottom.*/
+  margin-left: 0.5rem;
+  /*Margin-left was used to space out the buttons to make sure the buttons are not too crowded together on the webpage.*/
+}
+
+ul li button{
+  border: 2px solid var(--col-06);
+  background-color: var(--col-02);
+  /*For the colour palette of the buttons, I decided to make it a simple black outline when the webpage is in lightmode. 
+  I did this to match the relatively simple nature and sleek design of the other parts of the webpage.
+  However when the webpage changed to darkmode, I decided to add a pop of colour to the page by adding a bluish-green colour to the buttons.
+  The reason why i chose a bluish-green colour instead of white was because the colour white is a very bright colour.
+  If I were to make the buttons and the text inside of them white, it would make the buttons hard to read as the buttons are so close together.
+  This would therefore give the webpage a bad user experience.
+  Another reason for the bluish-green colour palette was that I was inspired by the neon lights that shows up at night.*/
+  color: var(--col-06);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: .3s ease;
+  /*By adding an ease transition, it makes the animation of scaling up the button smoother and therefore less jarring*/
+  /*From the example in the module which showed the 6 buttons, what I noticed when interacting with the buttons was that I found it annoying when the button animations were really slow.
+  Having a slow feedback made the website itself feel slow eventhough it was not an error in wifi speed or the loading of the website.
+  Since people would want to be able to quickly navigate through the webpage, I decided to make the animations run for 0.3s.
+  0.3s seemed to be the optimal feedback speed as it is fast enough where it does not feel like a delay when the mouse hovers over the buttons, but also slow enough where the user is able to notice the animation.*/
+
+}
+
+ul li button:hover {
+  background-color: var(--col-06);
+  /*When the mouse hovers over the button, the colour changes to --col-06.*/
+  color: #f2fbeb;
+  /*By having the button change to a different colour when the mouse hovers over it, this directs the user's attention to the button as the colour is a stark contrast to when the mouse is not hovered over it. 
+  By having it be a stark contrast, it also allows for people with poorer vision to notice it, therefore increasing accessibilty. */
+  cursor: pointer;
+  /*By changing the cursor to a pointer when the mouse hovers over the button, it makes it more apparent to the user that the button can be clicked.*/
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  /*When the mouse hovers over the button, the button increases to a scale of 1.1, further making it apparent to the user that the button is interactive.*/
+
+}
+
+#modeButton{
+  border: 2px solid var(--col-01);
+  background-color: var(--col-02);
+  /*For the darkmode/lightmode button, I decided on a black and white colour palette to keep it simple*/
+  color: var(--col-01);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: inset 0 0 0 0 var(--col-01);
+  transition: ease-out 0.3s;
+  outline: none;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+#modeButton:hover {
+  box-shadow: inset 100px 0 0 0 var(--col-01);
+  /*By adding box-shadow and an ease-out transition, it helps to add a simple sliding animation to the button when the mouse hovers over it.
+  The reason why I decided to choose a different hover animation for the darkmode/lightmode button was because this button had a different function compared to the other buttons, so I implemented a sliding animation to distinguish them.*/
+  color: var(--col-02);
+  /*When the mouse hovers over the button when it says darkmode, the button would turn black with a sliding transition to correspond to darkmode. 
+  When the mouse hovers over the button when it says lightmode, the button would turn white with a sliding transition to correspond to lightmode. */
+  cursor: pointer;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+  transition: color linear 2s;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+  transition: 4s;
+  animation: colourCycle 4s ease-in infinite;
+}
+
+h1:hover{
+  color:var(--col-04);
+  transition: 0s;
+}
+
+@keyframes colourCycle {
+  0%{color: rgb(112, 118, 177);}
+  50%{color: rgb(96, 146, 96);}
+  100%{color: rgb(151, 118, 144);}
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+}
