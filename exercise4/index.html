@@ -1,0 +1,47 @@
+<!-- This exercise is built off the MDN Video and Audio APIs tutorial written by MDN contributors  -->
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
+<!-- The base files from the example were modified and filled in via the tutorial and some extra commenting by Patrick McMahon -->
+<!-- Orginal Files: https://github.com/mdn/learning-area/blob/main/javascript/apis/video-audio/start/media-player-start.zip -->
+
+<!DOCTYPE HTML>
+<html lang="en-gb">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Video player example</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="player">
+
+      <video id="media" controls>
+        <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+      </video>
+
+      <p class="attribution">
+        "<a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/719005078">Art Time, Handheld Windmill / Fan</a>" by 
+        <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/berrybunchfamily">theBerry Bunch</a> is licensed under 
+        <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        </a>. 
+      </p>
+
+      <div class="controls video-controls">
+
+        <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+        <button class="stop" data-icon="S" aria-label="stop"></button>
+        <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+        <button class="mute" data-icon="🔉" aria-label="mute"></button>
+        <button class="rwd" data-icon="B" aria-label="rewind"></button>
+        <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+        <button class="fullscreen" data-icon="M" aria-label="fullscreen"></button>
+        <!--For the design of the fullscreen button, I decided on an icon from the Heydingsfont to match the design of the other icons on the media player.-->
+
+      </div>
+    </div>
+    <script src="custom-player.js"></script>
+  </body>
+</html>
+
+
