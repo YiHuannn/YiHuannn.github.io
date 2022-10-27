@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    /*The font "Silkscreen" was chosen to give the website a retro computer aesthetic.*/
+}
+
+#background{
+    position: absolute;
+    width: 38.2vw ;
+    height: 18.8vw;
+    left: 43.2vw;
+    /*left is 43.2% of the entire visible screen width*/
+    top: 3.6vw;
+    /*top is 3.6% of the entire visible screen width*/
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+    /*The top border and left border was set to solid and the colour #fdffff,
+      while the bottom border and right border was set to solid and the colour #818181 to give the popups a 3D effect, 
+      so it does not look too flat and boring.
+    */
+    background: #c3c3c3;
+    /*The colour #c3c3c3 was chosen to match the aesthetic of the windows 95 popups*/
+}
+
+#topRectangle{
+    position: absolute;
+    /*position: absolute, places an element relative to its parent's position and changing the layout around it.*/
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 43.6vw;
+    top: 4vw;
+    
+    background: #010081;
+    /*The colour #010081 was chosen to match the aesthetic of the windows 95 popups*/
+}
+
+#x{
+    position: absolute;
+    left: 78.4vw;
+    top: 4.3vw;
+}
+
+#text{
+    position: absolute;
+    top: 11.5vw;
+    left: 52vw;
+    font-size: 1.2vw;
+    color: #000000;
+    /*By using the colour #000000, it makes the words stand out from the background of the pop-ups, making it easy to read by anyone,
+      therefore increasing acccessibilty.
+    */
+}
+
+#background2{
+    position: absolute;
+    width: 38.2vw;
+    height: 17.5vw;
+    left: 53.8vw;
+    top: 18.1vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+}
+
+#topRectangle2{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 54.2vw;
+    top: 18.5vw;
+    
+    background: #010081;
+}
+
+#x2{
+    position: absolute;
+    left: 89vw;
+    top: 18.8vw;
+}
+
+#button2{
+    position: absolute;
+    left: 84vw;
+    top: 32.5vw;
+}
+
+#image{
+    position: absolute;
+    left: 84vw;
+    top: 24.5vw;
+}
+
+#text2{
+    position: absolute;
+    left: 56vw;
+    top: 25.5vw;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+#background3{
+    position: absolute;
+    width: 38.2vw;
+    height: 25vw;
+    left: 12.7vw;
+    top: 6.9vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+}
+
+#topRectangle3{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 13.1vw;
+    top: 7.3vw;
+    
+    background: #010081;
+}
+
+#x3{
+    position: absolute;
+    left: 48vw;
+    top: 7.6vw;
+}
+
+#image2{
+    position: absolute;
+    left: 13.3vw;
+    top: 11vw;
+}
+
+#background4{
+
+    position: absolute;
+    width: 32.4vw;
+    height: 18.8vw;
+    left: 6.5vw;
+    top: 35.6vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+}
+
+#topRectangle4{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 6.9vw;
+    top: 36vw;
+    
+    background: #2a2a8b;
+}
+
+#button4{
+    position: absolute;
+    left: 31vw;
+    top: 51.2vw;
+}
+
+#text4{
+    position: absolute;
+    top: 45vw;
+    left: 10vw;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+#background5{
+
+    position: absolute;
+    width: 38.2vw;
+    height: 18.9vw;
+    left: 26.3vw;
+    top: 28vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+    
+}
+
+#topRectangle5{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 26.7vw;
+    top: 28.4vw;
+    
+    background: #010081;
+}
+
+#x5{
+    position: absolute;
+    left: 61.5vw;
+    top: 28.7vw;
+}
+
+#image3{
+    position: absolute;
+    left: 27vw;
+    top: 33.5vw;
+}
+
+#text5{
+    position: absolute;
+    top: 37.5vw;
+    left: 37vw;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+#hiddenPopup1{
+    display: none;
+    /*Setting the display to none makes the element with the id of hiddenPopup1 hidden*/
+}
+
+#hiddenBackground1{
+
+    position: absolute;
+    width: 38.2vw;
+    height: 18.9vw;
+    left: 23.8vw;
+    top: 25.5vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+    
+}
+
+#hiddenTopRectangle1{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 24.2vw;
+    top: 26vw;
+    
+    background: #010081;
+}
+
+#hiddenx1{
+    position: absolute;
+    left: 59.1vw;
+    top: 26.3vw;
+}
+
+#hiddenPopup2{
+    display: none;
+}
+
+#hiddenBackground2{
+
+    position: absolute;
+    width: 38.2vw;
+    height: 18.9vw;
+    left: 20.8vw;
+    top: 22.7vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+    
+}
+
+#hiddenTopRectangle2{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 21.2vw;
+    top: 23.2vw;
+    
+    background: #010081;
+}
+
+#hiddenx2{
+    position: absolute;
+    left: 56.1vw;
+    top: 23.5vw;
+}
+
+#hiddenPopup3{
+    display: none;
+}
+#hiddenBackground3{
+
+    position: absolute;
+    width: 38.2vw;
+    height: 18.9vw;
+    left: 18vw;
+    top: 20vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;
+    
+}
+
+#hiddenTopRectangle3{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 18.5vw;
+    top: 20.3vw;
+    
+    background: #010081;
+}
+
+#hiddenx3{
+    position: absolute;
+    left: 53.4vw;
+    top: 20.6vw;
+}
+
+#hiddenImage3{
+    position: absolute;
+    left: 20vw;
+    top: 25vw;
+}
+
+#hiddenText3{
+    position: absolute;
+    top: 29vw;
+    left: 31vw;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+#background6{
+
+    position: absolute;
+    width: 38.2vw;
+    height: 21.7vw;
+    left: 49.7vw;
+    top: 36.7vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px #fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+
+    background: #c3c3c3;   
+}
+
+#topRectangle6{
+    position: absolute;
+    width: 37.3vw;
+    height: 2.7vw;
+    left: 50.1vw;
+    top: 37.15vw;
+    
+    background: #010081;
+}
+
+#x6{
+    position: absolute;
+    left: 85vw;
+    top: 37.5vw;
+}
+
+#button6{
+    position: absolute;
+    left:80vw;
+    top: 55.2vw;
+}
+
+#image4{
+    position: absolute;
+    left: 50.5vw;
+    top: 40.5vw;
+}
+
+#text6{
+    position: absolute;
+    top: 47vw;
+    left: 66vw;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+#main{
+
+    position: absolute;
+    width: 100%;
+    height: 3.4vw;
+    left: 0%;
+    bottom: 0%;
+    border: solid #fdffff;
+    
+    background: #c3c3c3;
+}
+
+#home{
+    position: absolute;
+    left: 0.1vw;
+    bottom: 0.15%;
+}
+
+#time{
+    position: absolute;
+    right: 0.1%;
+    bottom: 0.1%;
+   
+}
+
+.computer{
+    position: absolute;
+    left:2vw;
+    top: 2vw;
+}
+.computername{
+    position: absolute;
+    top: 7vw;
+    left: 0.8vw;
+    font-size: 0.8vw;
+    color: #fdffff;
+}
+
+.folder{
+    position: absolute;
+    left: 2.3vw;
+    top: 10vw;
+}
+.foldername{
+    position: absolute;
+    top: 14vw;
+    left: 2.3vw;
+    font-size: 0.8vw;
+    color: #fdffff;
+}
+
+.bin{
+    position: absolute;
+    left: 2.3vw;
+    top: 17vw;
+}
+.binname{
+    position: absolute;
+    top: 21vw;
+    left: 1vw;
+    font-size: 0.8vw;
+    color: #fdffff;
+}
+
+#virus{
+    position: absolute;
+    display: none;
+    /*Setting the display to none makes the element with the Id of "virus" hidden*/
+    animation: virus 20s infinite ; 
+}
+/*The animation is called "virus". One animation goes on for 20seconds. By adding "infinite", the animation loops forever.*/
+
+@keyframes virus {
+    0%   {left:0vw; top:0vw;}
+    25%  {left:30vw; top:45vw;}
+    50%  {left: 85vw; top:20vw;}
+    100% {left:0px; top:0px;}
+}
+/* @keyframes defines what "virus" animation does.
+At 0% of the animation, the image is positioned at left 0vw and top 0vw. 
+At 25% ofthe animation, the image is positioned at left 30vw and top 45vw
+At 50% of the animation, the image is positioned at left 85vw and top 20vw
+At 100% of the animation, the image is positioned at left 0vw and top 0vw, therfore going back to its original position.*/
+
+/*This animation was added to make the virus appear like its floating around the computer screen.*/
+
+#virus2{
+    position: absolute;
+    display: none;
+    animation: virus2 20s infinite ; 
+}
+
+@keyframes virus2 {
+    0%   {left:85vw; top:45vw}
+    50%  {left:40vw; top:0vw;}
+    80%  {left:0vw; top:30vw;}
+    100% {left:85vw; top:45vw;}
+}
+
+#virus3{
+    position: absolute;
+    display: none;
+    animation: virus3 20s infinite ; 
+}
+
+@keyframes virus3 {
+    0%   {left:0vw; top:45vw;}
+    45%  {left:85vw; top:20vw;}
+    80%  {left:10vw; top:0vw;}
+    100% {left:0vw; top:45vw;}
+}
+
+#flashingPopup{
+    position: absolute;
+    display: none;
+    top: 50vw;
+    left: 27vw;
+    border-top: solid 2px #fdffff;
+    border-left: solid 2px#fdffff;
+    border-right: solid 2px #818181;
+    border-bottom: solid 2px #818181;
+    animation: flash 3s linear infinite;
+    /*The animation is called "flash", One linear animation lasts for 3s. By adding infinite, the animation loops forever.*/
+}
+
+@keyframes flash {
+    50%{opacity: 0;}
+    80% {opacity: 0.5;}
+    /*At 50% of the animation, the opacity is set to 0.
+      When the animation is at 80%, the opacity is set to 0.5.
+    */
+}

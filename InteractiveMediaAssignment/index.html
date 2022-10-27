@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+        <title>Website as Spam</title>
+
+    </head>
+
+    <body style="background-color:#008080">
+        <!--The colour #008080 was chosen to match the aesthetic of the windows 95 background-->
+        <div class="popup1">
+            <div id="background"></div>
+            <div id="topRectangle"></div>
+            <div id="x">
+                <img src="img/close.jpg" width="30vw" height="30vw" onclick="hideImage()">
+                <!--When the user clicks on the image, the hideImage() function would run.-->
+
+                <!--image of "close.jpg" made by me using the website, pixlart.com-->
+            </div>
+            <div id="text">
+                <p>
+                    $%Free trip to Egypt!%&<br>!!DEFINETELY REAL!!
+                </p>
+                <!--This popup was made to mimic free travel scam ads-->
+            </div>
+        </div>
+
+        <div class="popup2">
+            <div id="background2"></div>
+            <div id="topRectangle2"></div>
+            <div id="x2">
+                <img src="img/close.jpg" width="30w" height="30vw" onclick="hideImage2()">
+            </div>
+            <div id="button2">
+                <img src="img/ok.png" width="90vw" height="35vw" onclick="showAlert()">
+                <!--When the user clicks on the image, the showAlert() function would run.-->
+
+                <!--Image of "ok.png" was made by me using the website, pixlart.com -->
+            </div>
+            <div id="image">
+                <img src="img/monkey.png" width="70vw" height="70vw">
+                <!--Reference:
+                    no author (2019) Pixel monkey, pixel monkey | Pixel Art Maker. 
+                    Available at: http://pixelartmaker.com/art/e06f6b625281365 (Accessed: October 25, 2022).
+                -->
+            </div>
+            <div id="text2">
+                <p>Invest in chimp coin, get $100,000 <br> immediately in your bank account!</p>
+                <!--This popup was made to mimic investment scam popups.-->
+            </div>
+        </div>
+
+        <div class="popup3">
+            <div id="background3"></div>
+            <div id="topRectangle3"></div>
+            <div id="x3">
+                <img src="img/close.jpg" width="30vw" height="30vw" onclick="showVirus()">
+            </div>
+            <div id="image2">
+                <img src="img/scam.jpg" width="530vw" height="260vw">
+                <!--image of "scam.jpg" made by me using the website, pixlart.com-->
+            </div>
+            <div id="text3"></div>
+            <!--This popup was made to mimic phishing ad popups that infects the user's computer with a virus.-->
+        </div>
+
+        <div class="popup4">
+            <div id="background4"></div>
+            <div id="topRectangle4"></div>
+            <div id="button4">
+                <img src="img/ok.png" width="90vw" height="35vw" onclick="showFlash()">
+            </div>
+            <div id="text4">
+                <p>Click 'Ok' to win a brand new Iphone 14!</p>
+                <!--This popup mimic click to win scam ads-->
+            </div>
+        </div>
+
+        <div class="popup5">
+            <div id="background5"></div>
+            <div id="topRectangle5"></div>
+            <div id="x5">
+                <img src="img/close.jpg" width="30w" height="30vw" onclick="showError()">
+            </div>
+            <div id="image3">
+                <img src="img/error.png" width="160vw" height="150vw">
+                <!--Reference:
+                    no author (2021) Old windows icons, Tumblr. 
+                    Available at: https://oldwindowsicons.tumblr.com/post/660611425165836289/windows-95-comctl32dll-icon-20480 (Accessed: October 25, 2022). 
+                -->
+            </div>
+            <div id="text5">
+                <p>error - too much sass</p>
+                <!--This popup mimics the design of a windows 95 error.-->
+            </div>
+        </div>
+
+        <div class="popup6">
+            <div id="background6"></div>
+            <div id="topRectangle6"></div>
+            <div id="x6">
+                <img src="img/close.jpg" width="30w" height="30vw" onclick="hideImage3()">
+            </div>
+            <div id="button6">
+                <img src="img/ok.png" width="90vw" height="35vw" onclick="showAlert2()">
+            </div>
+            <div id="image4">
+                <img src="img/Scam2.png" width="200vw" height="250vw">
+                <!--image of "Scam2.png" made by me using the website, pixlart.com-->
+            </div>
+            <div id="text6">
+                <p>Hot singles in your area! <br> xoxo</p>
+                <!--This popup was made to mimic the popups of scam dating sites-->
+            </div>
+        </div>
+
+        <div id="hiddenPopup1">
+            <div id="hiddenBackground1"></div>
+            <div id="hiddenTopRectangle1"></div>
+            <div id="hiddenx1">
+                <img src="img/close.jpg" width="30w" height="30vw">
+            </div>
+            <!--These hiddenpopups was made to mimic a windows error popup-->
+        </div>
+
+        <div id="hiddenPopup2">
+            <div id="hiddenBackground2"></div>
+            <div id="hiddenTopRectangle2"></div>
+            <div id="hiddenx2">
+                <img src="img/close.jpg" width="30w" height="30vw">
+            </div>
+        </div>
+
+        <div id="hiddenPopup3">
+            <div id="hiddenBackground3"></div>
+            <div id="hiddenTopRectangle3"></div>
+            <div id="hiddenx3">
+                <img src="img/close.jpg" width="30w" height="30vw" onclick="hideImage4()">
+                <!--When the user clicks on the image, the hideImage() function would run.-->
+            </div>
+            <div id="hiddenImage3">
+                <img src="img/error.png" width="160vw" height="150vw">
+            </div>
+            <div id="hiddenText3">
+                <p>error - too much sass</p>
+            </div>
+        </div>
+
+        <div id="main1">
+            <div id="main"></div>
+            <div id="home">
+                <img src="img/NicePng_windows-98-png_9197064.png" width="90vw" height="40vw">
+                <!--Reference:
+                    no author (2022) Download #startbutton #windows #windows98 #vaporwave #aesthetic - vaporwave windows 95 logo - HD transparent PNG, NicePNG.com.
+                    Available at: https://www.nicepng.com/downpng/u2t4o0i1t4w7a9t4_startbutton-windows-windows98-vaporwave-aesthetic-vaporwave-windows-95/ (Accessed: October 27, 2022).
+                -->
+            </div>
+            <div id="time">
+                <img src="img/time.jpg" width="100vw" height="40vw">
+                <!--image of "time.jpg" made by me using the website, pixlart.com-->
+            </div>
+            
+        </div>
+
+        <div class="computer">
+            <img src="img/computer.png" width="60vw" height="60vw">
+            <!--This image was added to mimic the application icons on a desktop screen-->
+
+            <!--Reference:
+            Qvkubzecwye (2022) Windows 95 icon transparent PNG, Windows 95 Icon.
+            Available at: https://www.subpng.com/png-ibgb1b/ (Accessed: October 25, 2022).-->
+        </div>
+        <div class="computername">
+            <p>My Computer</p>
+        </div>
+
+        </div>
+        <div class="folder">
+            <img src="img/folder.png" width="50vw" height="50vw">
+            <!--Reference:
+                no author (2022) Computer Icons Directory Windows 95 Desktop, text, rectangle png, PNGEGG.
+                Available at: https://www.pngegg.com/en/png-crwve/download (Accessed: October 25,2022)
+            -->
+        </div>
+        <div class="foldername">
+            <p>Folder</p>
+        </div>
+
+        <div class="bin">
+            <img src="img/bin.png" width="50vw" height="50vw">
+            <!--Reference:
+                no author (2022) Gray container illustration, trash rubbish bins &amp; waste paper baskets recycling bin computer icons Windows 95, Recycle Bin, furniture, text, recycling PNG free download, PNGWing. 
+                Available at: https://www.pngwing.com/en/free-png-bbjug/download (Accessed: October 25, 2022).
+            -->
+        </div>
+        <div class="binname">
+            <p>Recycle Bin</p>
+        </div>
+
+        <div id="virus">
+            <img src="img/virus.png" width="200vw" height="200vw">
+            <!--The image of a virus was added with a moving animation to simulate a computer virus, similar to how computers in real life would get viruses from scam pop-ups.-->
+
+            <!--Reference:
+                no author (2015) Virus 1, virus 1 | Pixel Art Maker. 
+                Available at: http://pixelartmaker.com/art/1b351a0315845ca (Accessed: October 27, 2022).
+            -->
+        </div>
+
+        <div id="virus2">
+            <img src="img/virus.png" width="200vw" height="200vw">
+        </div>
+
+        <div id="virus3">
+            <img src="img/virus.png" width="200vw" height="200vw">
+        </div>
+
+    </body>
+
+    <audio autoplay id="closeAudio" src="audio/erro.mp3"></audio>
+    <!--This audio mimics the windows 95 error sound. By having a jarring sound, it increases the frustration of the website, which is the intended effect.-->
+
+    <!--Reference:
+        omarjunior (2022) Windows XP error - sound button, myinstants. 
+        Available at: https://www.myinstants.com/en/instant/windows-xp-error/ (Accessed: October 25, 2022).
+    -->
+
+    <audio autoplay id="virusSound" src="audio/virus.wav"></audio>
+    <!--Reference:
+        no author (2022) Retro game notification, Mixkit. 
+        Available at: https://mixkit.co/free-sound-effects/ (Accessed: October 25, 2022).
+    -->
+
+    <audio autoplay id="laugh" src="audio/Chipmunk Laugh Sound Effect.mp3"></audio>
+    <!--This audio was added to make it seem like the user is being laughed at which helps increase frustration, which is the intended effect for this website.-->
+
+    <!--Reference:
+        no author (2022) Chipmunk Laugh Sound Effect, DJ Lunatique.
+        Available at: https://djlunatique.com/chipmunk-laugh-sound-effect/ (Accessed: October 25,2022)-->
+
+    <audio autoplay id="popup" src="audio/popup.mp3"></audio>
+    <!--This audio was added to match the popup showing up when the user clicks on the button-->
+
+    <!--Reference:
+        no author (2022) Message pop alert, Mixxkit.
+        Available at: https://mixkit.co/free-sound-effects/notification/ (Accessed: October 25,2022)-->
+
+    <div id="flashingPopup">
+        <img src="img/flashingPopup.png" width="630vw" height="150vw">
+        <!--Image of "flashingPopup.png" was made by me using the website, pixlart.com-->
+    </div>
+
+</html>
